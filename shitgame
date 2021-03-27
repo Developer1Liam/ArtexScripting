@@ -1,0 +1,22 @@
+local path = game:GetService("Workspace").NewerMap.Obstacles.Minefield.Mines:GetChildren()
+local plr = game:GetService("Players").LocalPlayer
+local char = plr.Character
+local root = char:FindFirstChild("HumanoidRootPart")
+
+_G.explode = false;
+
+while _G.explode do
+    for i,v in pairs(path) do
+        for i2,v2 in pairs(v:GetChildren()) do
+            if v2:IsA("Part") then
+                for i3,v3 in pairs(v2:GetChildren()) do
+                    if v3:IsA("TouchTransmitter") then
+                        firetouchinterest(root,v3.Parent,0)
+                        firetouchinterest(root,v3.Parent,1)
+                    end
+                end
+            end
+        end
+    end
+    wait()
+end
