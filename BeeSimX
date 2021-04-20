@@ -1,3 +1,3 @@
-while wait(.1) do
 game.Players.LocalPlayer:Kick("Script outdated, join discord.link/atrex for updated script.")
-end
+wait(1)
+game.Players.LocalPlayer:Kick("Pretty Sure Someones Using This For Some Script")
