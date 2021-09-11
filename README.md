@@ -1,3 +1,1 @@
-# ArtexScripting
-
-Scripts for ARTEX
+delete please.
